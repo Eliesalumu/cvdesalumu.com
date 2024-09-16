@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon cv en ligne</title> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.DIV_BV{
+    width: 400%;
+    background-color: blue;
+    
+}
+.BV{
+    text-align: center;
+    animation: ease-in-out;
+    animation: bv 15s infinite ease-in-out;
+    
+}
+.MENU{
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    z-index: 99;
+    box-shadow: 0 0 20px;
+    left: -25%;
+    top: 5%;
+
+}
+.MENU.active{
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+.MENU a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 7px;
+}
+.div_de_profi{
+    display: flex;
+    height: 200px;
+    width: fit-content;
+    position: relative;
+    left: 6%;
+    box-shadow: 0 0 10px;
+    
+    
+    
+
+}
+.Mon_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+.div_de_pres{
+    width: 30%;
+    height: 20%;
+    font-size: 16px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 0 10px;
+    
+    
+    
+}
+@keyframes bv{
+    from{
+        transform: translateX(-5%);
+    }
+    20%{
+        transform: translateX(-20%);
+    }
+    40%{
+        transform: translateX(-30%);
+    }
+    60%{
+        transform: translateX(-50%);
+    }
+    80%{
+        transform: translateX(-80%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+
+}
+.bx-menu{
+    font-size: 36px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 3px;
+}
+.CV{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+    align-items: center;
+
+}
+.CV a{
+    text-decoration: none;
+    color: black;
+    text-transform: lowercase;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    justify-content: center;
+    height: 70px;
+    text-align: center;
+   
+    
+}
+.Couleurs_drap{
+   display: flex; 
+   flex-direction: row;
+   width: 100%;
+   height: 5px;
+   
+
+}
+.rouge{
+    height: 5px;
+    background-color: red;
+    width: 35%;
+}
+.bleu{
+    height: 5px;
+    background-color: blue;
+    width: 35%;
+
+}
+.jaune{
+    height: 5px;
+    background-color: yellow;
+    width: 30%;
+}
+.bx{
+    font-size: 30px;
+}
+.bx:hover{
+    transform: scale(0.9);
+    transition: 0.2s ease-in-out;
+    color: blue;
+    text-shadow: 0 0 10px;
+
+}@media screen and (max-width: 600px){
+    h1{
+        font-size: 22npx;
+    }
+    .bx{
+        font-size: 30px;
+    }
+    .div_de_pres{
+        width: 50%;
+        height: 20%;
+        padding: 10px;
+        position: relative;
+        
+    }
+    .div_de_profi{
+        height: 150px;
+        
+        position: relative;
+        left: -5px;
+    }
+    .CV a{
+        font-size: 12px;
+    }
+    .CV{
+        background-color: red;
+    }
+    .MENU a{
+        font-size: 16px;
+        font-weight: bolder
+        
+        
+    }
+    .MENU{
+        width: 85px;
+        background-color: transparent;
+        border: none;
+        
+       
+    }
+    #IDP{
+        height: 50vh;
+        background-color: blue;
+    }
+    .MENU a:hover{
+        height: 25px;
+        background-color: yellow;
+        transition: 0.2s ease-in-out;
+        color: black;
+        box-shadow: 0 2px 5px;
+    }
+    #IDP{
+        background-color: aqua;
+        margin-top: 10px;
+        
+    }
+
+    
+    
+
+
+}
+    </style>
+</head>
+<body>
+    <i class="bx bx-menu" onclick="menu(this)"></i>
+    <div class="DIV_BV">
+        <h1 class="BV">Bienvenue ! Vous êtes bien sur le site Web de Elie Salumu 
+        Vous y trouverez toutes les informations le concernant</h1>
+    </div>
+    <div class="CV">
+        <a href="#IDP">IDENTITé PERSONELLE <i class="bx bx-user"></i></a>
+        
+        <a href="">éTUDES <br>FAITES<i class="bx bx-book"></i></a>
+        
+        <a href="">AUTRES <br> FORMATION<i class="bx bx-clipboard"></i></a>
+        
+        
+        <a href="">EXPERIENCE PROFESSIONELLE<i class="bx bx-table"></i></a>
+        
+        <a href=""> DOMAINE DE COMPETENCE<i class="bx bx-user-check"></i></a>
+        
+        <a href="">CONNAISSANCE LINGUISTIQUE<i class="bx bx-font-family"></i></a>
+    </div>
+
+    <div class="MENU" id="menu">
+        <a href="#">Accueil</a>
+        <a href="#">Profil</a>
+        <a href="#">Contact</a>
+        <a href="#">À propos</a>
+        <a href="#">Nos réalisations</a>
+    </div>
+
+    <header class="Mon_header">
+        <div class="div_de_profi">
+            <img src="/FICHIERS/profil.jpg" alt="">
+        </div>
+        <div class="div_de_pres">
+            <h1>Qui suis-je ?</h1>
+            <p>De son nom juridique KALONDA SALUMU Elie, il est licencié en Relations Internationales 
+            à l'Université de Kinshasa, et actuellement apprenant de 3ème cycle au même domaine. Passionné de l'informatique 
+            plus particulièrement de la programmation, il poursuit plusieurs formations en la matière d'une manière très dévouée et déjà 
+            quelques réalisations que vous pouvez découvrir dans les options ci-dessus.</p>
+        </div>
+    </header>
+    <section id="IDP">
+        <div class="Couleurs_drap">
+            <div class="rouge"></div>
+            <div class="jaune"></div>
+            <div class="bleu"></div>
+        </div>
+        <h1> <li style="list-style: decimal-leading;">IDENTITE PERSONELLE </li></h1>
+        <ul>
+            
+            <li>NOM : <hr></li>
+            <li>POST-NOM: <hr></li>
+            <li>PRENOM: <hr></li>
+            <li>LIEU ET DATE DE NAISSANCE: <hr> </li>
+            <li>SEXE : <hr></li>
+            <li>ETAT CIVIL : hr</li>
+            <li>ADRESSE</li>
+            <li>NATIONALITE</li>
+            <li>ETAT CIVILE</li>
+            <li>TEL:</li>
+        </ul>
+
+    </section>
+
+    <script>
+        function menu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    
+</body>
+</html>
